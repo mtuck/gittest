@@ -11,7 +11,29 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <!-- Latest compiled and minified JavaScript -->
+    <style>
+        .modal-content{
+           background-color:rgba(255,255,255,0.0);
+        }
 
+        .modal-header{
+            background-color:white;
+        }
+    .modal-footer{
+        background-color: white;
+    }
+    .modal .modal-body {
+        max-height: 100%;
+        background-color: white;
+        overflow-y: auto;
+    }
+
+    .modal-link{
+        height: 500px;
+        width: auto;
+        margin: auto;
+    }
+</style>
 
 </head>
 
@@ -403,15 +425,18 @@
     </div>
 </footer>
 
-<div id="myModal" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-body">
-                <div class="container-fluid" style="padding: 0;">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-content">
+        <div class="container">
+            <div class="modal-header" style="padding: 2px; margin: 0;">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body" style="padding: 0; margin: 0;">
+                <div class="container-fluid" >
 
 
 
-                    <div id='panzoom' style='height:520px;margin: auto'>
+                    <div id='panzoom' style='margin: auto'>
                         <div class='text-center' style='height:inherit;padding: 10px;'>
                             <img src="" class="modal-link img-responsive "  height="520" >
                         </div>
@@ -419,19 +444,16 @@
                 </div>
 
                 <div id="zoom-controls" style='position:relative;left:5%;width:185px;display:block;float:left;background: none transparent;'>
-                    <button class='zoom-in btn btn-primary'  title="zoom in">+</button>
-                    <button class='zoom-out btn btn-primary'  title="zoom out" hidden="true">-</button>
+                    <button class='zoom-in btn btn-default'  title="zoom in">+</button>
+                    <button class='zoom-out btn btn-default'  title="zoom out" hidden="true">-</button>
                     <button class='reset btn btn-danger'  title="reset">Reset</button>
                 </div>
 
             </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
+
         </div>
     </div>
 </div>
-
 
 <script src="js/jquery-2.2.4.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
