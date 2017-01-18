@@ -1,0 +1,51 @@
+.main {
+	background-color: #e9e9e9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: #007196;
+}
+
+@media (max-width: 992px){
+  .modal-img{
+    width: 100px;
+  }
+  
+}
+
+@media (min-width: 992px){
+  .modal-img{
+    width: 500px;
+  }
+  
+}
+
+.navbar {
+	border-width: 9px;
+	border-color: #F93737;
+	border-style: none;
+	border-bottom-style: solid;
+}
+
+.footer {
+	background-color: white;
+	height: 100px;
+	padding-top: 30px;
+	margin-top: 90px;
+}
+
+.info {
+	margin-bottom: 4em;
+}
+
+.key > tbody > tr:nth-of-type(4n - 1) > td > ol {
+	padding-left: 5em;
+}
+
+.key > tbody > tr:nth-of-type(4n) > td > ol {
+	padding-left: 5em;
+}
